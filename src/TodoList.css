@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* max-height: calc(100vh - 0px); */
+  }
+  
+  .list-container {
+    margin-top: 20px;
+    flex: 1 1;
+    overflow-y: auto;
+    border-radius: 10px;
+  }
+  
+  .btn-container {
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+  
+  .reset_container
+  {
+    display: flex;justify-content: space-between;
+  }

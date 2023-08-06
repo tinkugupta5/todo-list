@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.container
+{
+  width: 400px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 25px;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container_model
+{
+  width: 400px !important;
+  height: auto !important;
+  background-color: rgb(255, 255, 255);
+  position: relative !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn_area
+{
+  border: none;
+  border-radius: 13px;
+  padding: 18px 138px;
+  font-weight: 600;
+}
+
+.space_betwwn
+{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+
 }
 
-.App-link {
-  color: #61dafb;
+#dropdown-basic
+{
+  background-color: #DDDDDD !important;
+    border: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-container {
+  max-height: calc(100vh - 570px); /* Adjust the height as needed based on your layout */
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c6c6c600;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c6c6c600;
 }
