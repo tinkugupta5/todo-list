@@ -20,3 +20,11 @@
   {
     display: flex;justify-content: space-between;
   }
+  #contained-modal-title-vcenter
+  {
+    font-weight: 700 !important;
+  }
+  .contained-modal-title-vcenter2
+  {
+    font-weight: 700 !important;
+  }

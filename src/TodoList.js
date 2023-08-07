@@ -43,7 +43,7 @@ const TodoList = (props) => {
     <>  
      <div className='container'>
      <div className='reset_container'>
-        <h2>Todo List</h2>
+        <h2 className='contained-modal-title-vcenter2'>Todo List</h2>
         <div className='icon'>
         <svg onClick={removeAll} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_19_209)">
@@ -103,14 +103,14 @@ const TodoList = (props) => {
       centered show={show} onHide={handleClose}>
         <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-         Add Todo
+         Add Todo 📑
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Container className='container_model'>
         <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Example textarea</Form.Label>
+        <Form.Label>Your thoughts 🤔</Form.Label>
         <Form.Control as="textarea" value={activiy}  onChange={(e)=>setActivity(e.target.value)} rows={3} />
       </Form.Group>
       </Form>
